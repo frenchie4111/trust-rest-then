@@ -1,0 +1,19 @@
+{
+  "name": "trust-rest-then",
+  "version": "1.0.0",
+  "description": "Trust Rest Promised",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frenchie4111/trust-rest-then.git"
+  },
+  "author": "Michael Lyons <mdl0394@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frenchie4111/trust-rest-then/issues"
+  },
+  "homepage": "https://github.com/frenchie4111/trust-rest-then"
+}
