@@ -24,9 +24,7 @@
                     resolve();
                 };
 
-                _arguments.push( finished );
-
-                trust.apply( _this, _arguments );
+                trust.call( trust, _arguments[ 0 ], _arguments[ 1 ], finished );
             } );
         };
     }
