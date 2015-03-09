@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/frenchie4111/trust-rest-then/issues"
   },
-  "homepage": "https://github.com/frenchie4111/trust-rest-then"
+  "homepage": "https://github.com/frenchie4111/trust-rest-then",
+  "dependencies": {
+    "q": "^1.2.0",
+    "trust": "^0.1.0"
+  }
 }
