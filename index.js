@@ -1,5 +1,5 @@
 /**
- * Copyright of Mark One Lifestyle Inc.
+ * MIT
  *
  * Authors:
  *     - Mike Lyons (m@mkone.co)
@@ -19,9 +19,25 @@
                 _arguments = arguments;
 
             return q.Promise( function( resolve, reject ) {
+                var return_value;
+
                 var finished = function( err ) {
                     if( err ) return reject( err );
-                    resolve();
+                    resolve( return_value );
+                };
+
+                var old_after_handler = _arguments[ 1 ].after_handler;
+
+                _arguments[ 1 ].after_handler = function( err, res, done ) {
+                    if( err ) return done( err );
+
+                    return_value = res.body;
+
+                    if( old_after_handler ) {
+                        old_after_handler( err, res, done );
+                    } else {
+                        done();
+                    }
                 };
 
                 trust.call( trust, _arguments[ 0 ], _arguments[ 1 ], finished );
