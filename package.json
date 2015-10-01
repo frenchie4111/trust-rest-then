@@ -1,6 +1,6 @@
 {
   "name": "trust-rest-then",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Trust Rest Promised",
   "main": "index.js",
   "scripts": {
