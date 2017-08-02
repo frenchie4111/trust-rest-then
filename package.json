@@ -18,6 +18,6 @@
   "homepage": "https://github.com/frenchie4111/trust-rest-then",
   "dependencies": {
     "q": "^1.2.0",
-    "trust-rest": "^1.2.1"
+    "trust-rest": "^1.2.2"
   }
 }
